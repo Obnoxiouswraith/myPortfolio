@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Four Section Webpage</title>
+  <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;900&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Hind', sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+      
+      scroll-behavior: smooth;
+      cursor: url(cursor.png), auto;
+    }
+
+
+    section {
+      padding: 4rem 2rem;
+      min-height: 100vh;
+      cursor: url(cursor.png), auto;
+    }
+
+    /* Section 1: Custom Design */
+    #section1 {
+      background-color: #f4f4f4;
+      color: #000;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      cursor: url(cursor.png), auto;
+    }
+
+    #section1 header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: url(cursor.png), auto;
+      
+         
+      background-color: #f4f4f4;
+    }
+
+    .logo {
+      font-size: 1.8vw;
+      font-weight: 900;
+      margin-left: 20px;
+      text-transform: uppercase;
+      
+
+      
+          
+    }
+ 
+#section2 {
+  background-color: #f4f4f4;
+  font-family: 'Arial', sans-serif;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: url(cursor.png), auto;
+}
+
+
+
+.container {
+      display: flex;
+      height: 100vh;
+      align-items: center;
+      justify-content: center;
+      gap: 80px;
+      padding: 40px;
+      box-sizing: border-box;
+      position: relative;
+      cursor: url(cursor.png), auto;
+    }
+
+    .agenda-box {
+      background: #000;
+      color: #f4f4f4;
+      width: 790px;
+      height: 450px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-direction: column;
+      position: relative;
+      padding: 40px;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .agenda-box h2 {
+      font-size: 110px;
+      color: #f4f4f4;
+      font-weight: bold;
+      margin: 0;
+      align-self: flex-start;
+      font-family: 'Arial', sans-serif;
+      text-decoration: solid;
+      text-transform: uppercase;
+    }
+    h2{
+      font-family: 'Hind', sans-serif;
+   
+      
+      letter-spacing: 2px;
+      
+
+    }
+
+    .agenda-table {
+      border-collapse: collapse;
+      font-size: 20px;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .agenda-table td {
+      border: 2px solid #000;
+      padding: 15px 40px;
+      white-space: nowrap;
+      font-family: 'Arial', sans-serif;
+    }
+
+
+    
+    @media (max-width: 900px) {
+      .container {
+        flex-direction: column;
+        gap: 40px;
+      }
+
+
+      .agenda-table {
+        width: 90%;
+      }
+
+      .agenda-table td {
+        padding: 10px 15px;
+        font-size: 15px;
+        font-family: 'Arial', sans-serif;
+        
+      }
+
+      .agenda-box h2{
+        font-size: 48px;
+        font-family: 'Arial', sans-serif;
+        color: #f4f4f4
+        ;
+        
+      }
+    }
+
+
+    
+
+
+    main {
+      background-color: #f4f4f4;
+      flex: 1;
+      display: flex;
+      position: relative;
+      overflow: hidden;
+      cursor: url(cursor.png), auto;
+    }
+
+    h1 {
+      font-family: 'Hind', sans-serif;
+      font-weight: 900;
+      font-size: 8vw;
+      line-height: 1.1;
+      color: #000;
+      position: absolute;
+      top: 50%;
+      left: 1%;
+    }
+   
+   
+    .nab {
+      margin-top: 140px;
+    }
+
+    p {
+      font-family: 'Hind', sans-serif;
+      font-weight: 300;
+      font-size: 1.5vw;
+      color: #666;
+      position: absolute;
+      top:78%;
+    
+      right: 1%;
+      max-width: 500px;
+    }
+
+    .highlight {
+      font-weight: 700;
+      color: #000;
+    }
+
+    .blinking-cursor {
+      font-weight: 900;
+      color: black;
+      animation: blink 0.5s step-end infinite;
+    }
+    .h3{
+      font-family: 'Hind', sans-serif;
+      font-size: 30px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      
+      
+    }
+  .p3{
+    font-family: 'Hind', sans;
+  }
+
+  .text-box{
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  margin-left: 80px;
+  background-color: #dfef71;
+  border: 2px solid whitesmoke;
+  border-radius: 0px;
+  font-family: 'Segoe UI', sans-serif;
+  color:#000000b8;
+  line-height: 1.6;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.text-box strong {
+  font-size: 1.1em;
+  color: black;
+  font-weight: bold;
+
+}
+.ITAcademy{
+  
+  width: 330px;         /* Set the width */
+  height: 230x;         /* Automatically adjust the height based on width */
+  position: absolute;   /* Allows you to move the image freely */
+  top: 1880px;           /* Distance from the top of the page */
+      left: 730px;          /* Distance from the left of the page */
+      
+      display: block;
+      transition: transform 0.4s ease, filter 0.4s ease;
+}
+.ITAcademy:hover{
+  transform: scale(1.05);
+  filter: brightness(1.2);
+}
+      
+.Middlesex{
+  
+  width: 330px;         /* Set the width */
+  height: 230x;         /* Automatically adjust the height based on width */
+  position: absolute;   /* Allows you to move the image freely */
+  top: 1880px;           /* Distance from the top of the page */
+      left: 1077px;          /* Distance from the left of the page */
+      display: block;
+      transition: transform 0.4s ease, filter 0.4s ease;
+
+}
+.Middlesex:hover{
+  transform: scale(1.05);
+  filter: brightness(1.2);
+}
+      
+
+
+
+
+    @keyframes blink {
+      50% {
+        opacity: 0;
+      }
+    }
+  
+
+    /* Other sections */
+    #section2 { background-color: #f4f4f4; }
+    #section3 { background-color: #f4f4f4; }
+    #section4 { background-color: #f4f4f4; }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #1e293b;
+      color: #f4f4f4
+    }
+    .agenda-box::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 0;
+      height: 0;
+      background-color: #dfef71; 
+
+      transition: width 2s ease, height 2s ease;
+      z-index: 1;
+    }
+
+    .agenda-box:hover::before {
+      width: 100%;
+      height: 100%;
+    }
+    .agenda-box:hover::after {
+  content: "Hello Friend."; /* Text to show on hover */
+  position: absolute;
+  top: 70%;
+  left: 76%;
+  transform: translate(-50%, -50%);
+  color: #000; /* Text color */
+  font-size: 90px; /* Adjust font size as needed */
+  font-family: 'Arial', sans-serif;
+  font-weight: 700;
+  z-index: 3; /* Make sure it's on top of other content */
+}
+
+
+    .whitehov {
+      position: relative;
+      z-index: 2; /* Ensure content stays above the pseudo element */
+      color: white;
+      text-align: center;
+      line-height: 200px;
+      font-family: sans-serif;
+    }
+
+    /* Skills Overview Section Styles */
+.layout {
+  display: flex;
+  gap: 50px;
+  height: 100%;
+}
+
+.left-box {
+  background: black;
+  flex: 2;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.white-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-image: url(green.png);
+  transform: translate(-50%, -50%) scale(0.1);
+  transform-origin: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 15px;
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  transition: transform 0.8s ease-in-out;
+}
+
+.content2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  color: white;
+  opacity: 0;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  transition: opacity 1s ease;
+  overflow: hidden;
+  font-family: 'Hind',sans-serif;
+  font-weight: bolder;
+}
+
+.content2.visible {
+  opacity: 1;
+  pointer-events: all;
+}
+
+h4 {
+  font-family: 'Hind', sans-serif;
+      font-size: 23px;
+      font-weight: bold;
+      
+      
+}
+h4.h4{
+  letter-spacing: 2px;
+      text-transform: uppercase;
+
+}
+
+p4 {
+  display: block;
+  font-size: 13px;
+  line-height: 1.3;
+  margin-bottom: 10px;
+}
+
+.right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  flex: 1;
+}
+
+.top-right-box,
+.bottom-right-box {
+  width: 100%;
+  border-radius: 5px;
+  padding: 20px;
+  color: black;
+  font-size: 14px;
+  overflow-y: auto;
+}
+
+.top-right-box {
+  background: #dfef60;
+  height: 260px;
+}
+
+.bottom-right-box {
+  background-color: #000;
+  background-size: cover;
+  height: 390px;
+  color: white;
+}
+
+.top-right-box h4,
+.bottom-right-box h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.top-right-box p4,
+.bottom-right-box p4 {
+  display: block;
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+
+/* Responsive for mobile */
+@media (max-width: 900px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .left-box {
+    flex: none;
+    height: 300px;
+  }
+
+  .right-column {
+    flex-direction: row;
+    height: auto;
+  }
+
+  .top-right-box,
+  .bottom-right-box {
+    height: 300px;
+    flex: 1;
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}
+p4.hoverme{
+  color: white;
+  font-family: 'Hind',sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  text-align: center;
+  text-decoration: solid;
+  text-transform: uppercase;
+}
+
+
+    
+  </style>
+</head>
+<body>
+
+
+  <!-- SECTION 1 -->
+  <section id="section1">
+    <header>
+      <nav class="logo">Nabiil Muhammad Monodee</nav>
+      
+    </header>
+    <main>
+      <div class="content">
+        <h1>Cybersecurity &</h1>
+        <br>
+        <h1 class="nab" id="Typingtexthealthcare">
+          Digital<span id="forensicsText"></span><span id="cursor" class="blinking-cursor">|</span>
+        </h1>
+        <p>
+          A <span class="highlight">Middlesex</span> University student driven by a deep passion for securing the digital future through innovation and intellect.
+        </p>
+      </div>
+    </main>
+  </section>
+
+  <!-- SECTION 2 -->
+  <section id="section2">
+    <!-- SECTION 2 -->
+<section id="section2">
+  <div class="container">
+    <div class="agenda-box">
+      <div class="whitehov"></div>
+      <h2>Directory.</h2>
+    </div>
+
+    <table class="agenda-table">
+      
+      <tr><td>03</td><td>Academic Background</td></tr>
+      <tr><td>04</td><td>Skils Overview</td></tr>
+      <tr><td>05</td><td>Certifications</td></tr>
+      <tr><td>06</td><td>TryHackMe Acheivements</td></tr>
+      <tr><td>07</td><td>Projects</td></tr>
+      <tr><td>08</td><td>Other skills</td></tr>
+      <tr><td>09</td><td>Contacts</td></tr>
+    </table>
+  </div>
+</section>
+
+    
+  </section>
+
+  <!-- SECTION 3 -->
+  <section class="section3">
+    <h3 class="h3"><strong>Academic Background</strong></h3>
+    <div class="text-box">
+      <h3><strong>Middlesex University</strong></h3>
+      <p3>BSC Cybersecurity and Digital Forensics | 2024–2026</p3>
+    
+      <h3>Year 1</h3>
+      <p3>
+        Information in Organisations<br>
+        Computer Systems Architecture and Operating Systems<br>
+        Computer Networks<br>
+        Programming for Data Communications and Network
+      </p3>
+    
+      <h3>Year 2</h3>
+      <p3>
+        Secure Web Technology<br>
+        Internet of Things<br>
+        Project Management and Project Practice<br>
+        Digital Incident Scene Investigations and Analysis
+      </p3>
+      <h3> Year 3 (Ongoing)</h3>
+      <p3>
+        Individual Project<br>
+        Memory Analysis<br>
+        Computer Security and Ethical Hacking<br>
+        Defensive Security<br>
+
+      </p3>
+    
+      <h3><strong>ITAcademy</strong></h3>
+      <p3>Network Engineering | 2025-2026</p>
+    
+      <p3><strong>Cisco Certified Network Associate</strong></p3>
+    </div>
+    
+    <img src="logo.jpeg" alt="ITAcademy" class="ITAcademy">
+    <img src="middlsex.png" alt="Middlesex" class="Middlesex">
+    
+  
+  </section>
+
+  <!-- SECTION 4 -->
+  <section id="section4">
+    <h4 class="h4"><strong>Skill Overview</strong></h4>
+    <section id="section4">
+      <div class="layout">
+        <div class="left-box">
+          <p4 class="hoverme">hover me</p4>
+        
+          <div class="white-box" id="whiteBox">0%</div>
+    
+          <div class="content2" id="skillsContent">
+            <h4>Languages & Scripting</h4>
+            <p4>C, Python, JavaScript, HTML, CSS, XML, XSL<br>Bash (Linux), Batch (Windows)</p4>
+    
+            <h4>Web & Software Development</h4>
+            <p4>Secure front-end development (HTML, CSS, JS)<br>
+            Encrypted local storage using IndexedDB<br>
+            Python for keylogger (educational), cryptography, and network automation<br>
+            C for IoT (ESP32, Arduino MKR1010)</p4>
+    
+            <h4>Cybersecurity & Networking</h4>
+            <p4>AES encryption, secure file handling<br>
+            Digital forensics (FTK Imager, SleuthKit, Autopsy, Hex Editor)<br>
+            Steganography techniques on Linux & Windows<br>
+            Networking with Cisco Packet Tracer and Python socket programming</p4>
+    
+            <h4>IoT & Embedded Systems</h4>
+            <p4>Sensor/actuator integration on ESP32 & Arduino MKR1010<br>Tools: Arduino IDE, Wokwi</p4>
+    
+            <h4>Databases</h4>
+            <p4>MySQL, IndexedDB with encryption</p4>
+    
+            <h4>Operating Systems</h4>
+            <p4>Ubuntu, Kali Linux, Debian, Windows</p4>
+    
+            <h4>Tools & IDEs</h4>
+            <p4>VS Code, Arduino IDE, Wokwi, FTK Imager, Autopsy, SleuthKit</p4>
+    
+            <h4>Compliance & Management</h4>
+            <p4>Basic understanding of ISO standards<br>Project management methodologies</p4>
+          </div>
+        </div>
+    
+        <div class="right-column">
+          <div class="top-right-box">
+            <h4>TryHackMe Learning Areas</h4>
+            <p4><strong>Networking:</strong> OSI Model, DNS, LAN Design, TCP/IP, Packet Transmission</p4>
+            <p4><strong>Operating Systems:</strong> Windows & Linux Fundamentals, OS Security</p4>
+            <p4><strong>Offensive Security:</strong> Ethical Hacking, Auth Bypass, CVE Exploitation</p4>
+            <p4><strong>Defensive Security:</strong> SOC Operations, Threat Intel, Alert Triage</p4>
+            <p4><strong>Web/App Security:</strong> HTTP, Architecture, Web App Attacks</p4>
+            <p4><strong>Digital Forensics:</strong> Disk Analysis, Autopsy, macOS Forensics</p4>
+            <p4><strong>Cyber Career Readiness:</strong> Analyst Roles, Paths, Research Skills</p4>
+          </div>
+    
+          <div class="bottom-right-box">
+            <h4>Professional Profile</h4>
+            <p4><strong>Languages:</strong> Fluent in French and English</p4>
+    
+            <p4><strong>Certifications:</strong></p4>
+            <p4>AWS Machine Learning – Completion</p4>
+            <p4>Oracle Database – Completion</p4>
+            <p4>Pre-Security – TryHackMe</p4>
+            <p4>Introduction to Cybersecurity – TryHackMe</p4>
+            <p4>Cybersecurity Virtual Experience Program – Forage</p4>
+            <p4>CCNA – ITAcademy (In Progress)</p4>
+            <p4>Cisco – Introduction to Cybersecurity</p4>
+            <p4>Google – Cybersecurity Professional Certificate</p4>
+            <p4>Microsoft – Cybersecurity Analyst Professional Certificate</p4>
+    
+            <p4><strong>Soft Skills:</strong> Leadership, communication, adaptability, problem-solving</p4>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    
+    
+    
+    
+    
+  </section>
+
+  <footer>
+    <p></p>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const forensicsText = document.getElementById('forensicsText');
+      const cursor = document.getElementById('cursor');
+      const text = " Forensics";
+      const color="black"
+  
+      let index = 0;
+  
+      function type() {
+        if (index < text.length) {
+          cursor.style.visibility = 'visible';
+          forensicsText.innerHTML = `<span style="color: ${color};">${text.slice(0, index + 1)}</span>`;
+          index++;
+          setTimeout(type, 200);
+        } else {
+          setTimeout(() => {
+            index = 0;
+            type();
+          }, 2000); // Wait 2 seconds before restarting
+        }
+      }
+  
+      type();
+    });
+  </script>
+  <script>
+    const whiteBox = document.getElementById('whiteBox');
+const content = document.getElementById('skillsContent');
+const leftBox = document.querySelector('.left-box'); // get the black box
+
+const steps = [10, 20, 30, 50, 80, 100];
+let index = 0;
+let isRunning = false;
+
+function animateLoader() {
+  if (index < steps.length) {
+    const pct = steps[index];
+    whiteBox.textContent = pct + '%';
+    whiteBox.style.transform = `translate(-50%, -50%) scale(${pct / 100})`;
+    index++;
+    setTimeout(animateLoader, 600);
+  } else {
+    setTimeout(() => {
+      whiteBox.textContent = '';
+      content.classList.add('visible');
+      isRunning = false;
+    }, 1000);
+  }
+}
+
+function startAnimation() {
+  if (isRunning) return;
+  isRunning = true;
+  index = 0;
+  whiteBox.textContent = '0%';
+  whiteBox.style.transform = 'translate(-50%, -50%) scale(0.1)';
+  content.classList.remove('visible');
+  setTimeout(animateLoader, 400);
+}
+
+
+leftBox.addEventListener('mouseenter', startAnimation);
+
+  </script>
+  
+  
+   
+
+</body>
+</html>
